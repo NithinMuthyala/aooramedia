@@ -1,0 +1,817 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "slug": "web-development",
+    "title": "Web Development",
+    "image": "/assets/web_development.jpg",
+    "shortDescription": "High-performance websites and web applications built for modern businesses.",
+    "description": "We design and develop fast, responsive, scalable web experiences that turn business goals into measurable digital products.",
+    "longDescription": "From corporate websites and landing pages to custom portals and SaaS platforms, we build web solutions with clean architecture, intuitive experiences, strong performance, and room to scale.",
+    "seo": {
+      "title": "Web Development Services | Modern & Scalable Websites",
+      "description": "Professional web development services for fast, responsive and scalable websites and web applications built around your business goals.",
+      "keywords": [
+        "web development",
+        "website development",
+        "Next.js development",
+        "React development",
+        "custom web applications"
+      ]
+    },
+    "highlights": [
+      "Responsive Websites",
+      "Web Applications",
+      "Next.js & React",
+      "API Integration",
+      "Performance Optimization"
+    ],
+    "approach": [
+      {
+        "title": "Discovery",
+        "description": "Understand your business, users, objectives, technical needs, and success metrics."
+      },
+      {
+        "title": "Architecture",
+        "description": "Define the information structure, technology stack, integrations, and scalable foundation."
+      },
+      {
+        "title": "Experience Design",
+        "description": "Create clear interfaces and interactions focused on usability, accessibility, and conversion."
+      },
+      {
+        "title": "Development",
+        "description": "Build maintainable frontend and backend experiences with quality-focused engineering."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "description": "Goals, audience, requirements and roadmap."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Wireframes, visual direction and user experience."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "description": "Frontend, backend, APIs and integrations."
+      },
+      {
+        "step": "04",
+        "title": "Test",
+        "description": "Performance, responsiveness, accessibility and QA."
+      },
+      {
+        "step": "05",
+        "title": "Launch",
+        "description": "Deployment, monitoring and continuous improvement."
+      }
+    ],
+    "industries": [
+      "SaaS",
+      "Healthcare",
+      "Finance",
+      "Retail",
+      "Education",
+      "Manufacturing"
+    ]
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "slug": "mobile-app-development",
+    "title": "Mobile App Development",
+    "image": "/assets/app_dev.jpg",
+    "shortDescription": "User-focused mobile applications that make your products accessible wherever customers are.",
+    "description": "We create intuitive mobile applications with reliable performance, thoughtful UX, and scalable architecture.",
+    "longDescription": "We transform product ideas into polished mobile experiences for iOS and Android, from initial product strategy through development, testing, deployment, and ongoing improvements.",
+    "seo": {
+      "title": "Mobile App Development Services | iOS & Android Apps",
+      "description": "Custom mobile app development services for scalable, user-friendly iOS and Android applications.",
+      "keywords": [
+        "mobile app development",
+        "iOS app development",
+        "Android app development",
+        "React Native",
+        "Flutter"
+      ]
+    },
+    "highlights": [
+      "iOS & Android",
+      "Cross-Platform Apps",
+      "Mobile UX",
+      "API Integration",
+      "App Maintenance"
+    ],
+    "approach": [
+      {
+        "title": "Product Discovery",
+        "description": "Clarify the product vision, users, features, priorities, and technical constraints."
+      },
+      {
+        "title": "UX Strategy",
+        "description": "Design mobile-first flows that reduce friction and make important actions easy."
+      },
+      {
+        "title": "App Engineering",
+        "description": "Develop robust applications with reusable components, secure APIs, and scalable architecture."
+      },
+      {
+        "title": "Release & Growth",
+        "description": "Test, publish, monitor, and continuously improve the application based on real usage."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Plan",
+        "description": "Product goals, users and feature roadmap."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Mobile flows, UI system and interactive prototypes."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "description": "Application development and API integration."
+      },
+      {
+        "step": "04",
+        "title": "Validate",
+        "description": "Device testing, QA and performance checks."
+      },
+      {
+        "step": "05",
+        "title": "Release",
+        "description": "Store deployment, monitoring and support."
+      }
+    ],
+    "industries": [
+      "Healthcare",
+      "FinTech",
+      "Retail",
+      "Logistics",
+      "Education",
+      "Travel"
+    ]
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "image":"/assets/digital_marketing.jpg",
+    "shortDescription": "Data-driven digital marketing strategies that increase visibility, engagement, and qualified leads.",
+    "description": "We combine strategy, content, search, paid campaigns, and analytics to help brands reach the right audience.",
+    "longDescription": "Our digital marketing approach connects brand positioning with measurable acquisition. We use data and continuous optimization to improve reach, engagement, traffic, and conversion.",
+    "seo": {
+      "title": "Digital Marketing Services | SEO, PPC & Growth",
+      "description": "Digital marketing services covering SEO, paid campaigns, content strategy, social media and analytics for sustainable business growth.",
+      "keywords": [
+        "digital marketing",
+        "SEO services",
+        "PPC",
+        "social media marketing",
+        "content marketing"
+      ]
+    },
+    "highlights": [
+      "SEO",
+      "Paid Campaigns",
+      "Content Strategy",
+      "Social Media",
+      "Analytics"
+    ],
+    "approach": [
+      {
+        "title": "Market Research",
+        "description": "Understand your market, competitors, customers, search behavior, and opportunities."
+      },
+      {
+        "title": "Growth Strategy",
+        "description": "Build a channel strategy aligned with acquisition, engagement, and revenue goals."
+      },
+      {
+        "title": "Campaign Execution",
+        "description": "Launch optimized content, search, social, and paid campaigns."
+      },
+      {
+        "title": "Optimization",
+        "description": "Use analytics and experimentation to continuously improve campaign performance."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Research",
+        "description": "Audience, market, competitors and opportunities."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "description": "Channels, content, keywords and campaign roadmap."
+      },
+      {
+        "step": "03",
+        "title": "Launch",
+        "description": "Campaigns, content and tracking implementation."
+      },
+      {
+        "step": "04",
+        "title": "Measure",
+        "description": "Traffic, leads, engagement and conversion analysis."
+      },
+      {
+        "step": "05",
+        "title": "Optimize",
+        "description": "Testing, iteration and continuous growth."
+      }
+    ],
+    "industries": [
+      "SaaS",
+      "E-commerce",
+      "Healthcare",
+      "Education",
+      "Professional Services",
+      "Startups"
+    ]
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "slug": "cyber-security",
+    "title": "Cyber Security",
+    "image": "/assets/cyber_security.jpg",
+    "shortDescription": "Practical security solutions that help protect applications, infrastructure, and business data.",
+    "description": "We help businesses identify risks, strengthen security controls, and build safer digital systems.",
+    "longDescription": "Our security services focus on reducing practical business risk through assessment, secure development practices, vulnerability management, access controls, and continuous improvement.",
+    "seo": {
+      "title": "Cyber Security Services | Application & Infrastructure Security",
+      "description": "Cyber security services to identify vulnerabilities, strengthen applications and infrastructure, and reduce digital business risk.",
+      "keywords": [
+        "cyber security",
+        "application security",
+        "vulnerability assessment",
+        "security audit",
+        "cloud security"
+      ]
+    },
+    "highlights": [
+      "Security Audits",
+      "Vulnerability Assessment",
+      "Application Security",
+      "Cloud Security",
+      "Security Monitoring"
+    ],
+    "approach": [
+      {
+        "title": "Assess",
+        "description": "Identify vulnerabilities, attack surfaces, security gaps, and business-critical assets."
+      },
+      {
+        "title": "Prioritize",
+        "description": "Rank risks by likelihood, impact, exposure, and business importance."
+      },
+      {
+        "title": "Harden",
+        "description": "Improve application, infrastructure, identity, and data security controls."
+      },
+      {
+        "title": "Monitor",
+        "description": "Establish practical monitoring, response, and continuous security improvement."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "description": "Review applications, infrastructure and controls."
+      },
+      {
+        "step": "02",
+        "title": "Identify",
+        "description": "Find vulnerabilities and security gaps."
+      },
+      {
+        "step": "03",
+        "title": "Remediate",
+        "description": "Address prioritized risks and weaknesses."
+      },
+      {
+        "step": "04",
+        "title": "Validate",
+        "description": "Retest fixes and verify security improvements."
+      },
+      {
+        "step": "05",
+        "title": "Monitor",
+        "description": "Maintain visibility and improve security continuously."
+      }
+    ],
+    "industries": [
+      "Finance",
+      "Healthcare",
+      "SaaS",
+      "E-commerce",
+      "Government",
+      "Manufacturing"
+    ]
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "slug": "software-testing",
+    "title": "Software Testing",
+    "image": "/assets/qa.png",
+    "shortDescription": "Quality engineering that helps teams release reliable, secure, and high-performing software.",
+    "description": "We test software across functionality, usability, performance, compatibility, and critical user journeys.",
+    "longDescription": "Our QA approach combines manual validation with automation where it provides value, helping teams catch defects earlier and ship with greater confidence.",
+    "seo": {
+      "title": "Software Testing & QA Services | Automation & Performance",
+      "description": "Software testing and QA services covering functional, automation, API, performance, compatibility and end-to-end testing.",
+      "keywords": [
+        "software testing",
+        "QA services",
+        "test automation",
+        "Playwright testing",
+        "API testing",
+        "performance testing"
+      ]
+    },
+    "highlights": [
+      "Manual QA",
+      "Test Automation",
+      "API Testing",
+      "Performance Testing",
+      "End-to-End Testing"
+    ],
+    "approach": [
+      {
+        "title": "Understand",
+        "description": "Map requirements, critical workflows, risks, and quality expectations."
+      },
+      {
+        "title": "Plan",
+        "description": "Create a test strategy covering functional, integration, regression, and performance needs."
+      },
+      {
+        "title": "Automate",
+        "description": "Automate stable, repeatable journeys to improve release confidence and speed."
+      },
+      {
+        "title": "Improve",
+        "description": "Use defect trends and test results to strengthen the product and development process."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyze",
+        "description": "Requirements, workflows and risk assessment."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "description": "Test cases, environments and automation strategy."
+      },
+      {
+        "step": "03",
+        "title": "Execute",
+        "description": "Functional, API, UI and integration testing."
+      },
+      {
+        "step": "04",
+        "title": "Report",
+        "description": "Defects, evidence, trends and quality insights."
+      },
+      {
+        "step": "05",
+        "title": "Verify",
+        "description": "Regression testing and release validation."
+      }
+    ],
+    "industries": [
+      "SaaS",
+      "FinTech",
+      "Healthcare",
+      "E-commerce",
+      "Education",
+      "Enterprise"
+    ]
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "slug": "ai-ml-solutions",
+    "title": "AI & ML Solutions",
+    "image": "/assets/ai_ml.jpg",
+    "shortDescription": "Practical AI and machine learning solutions that turn business data into useful intelligence.",
+    "description": "We help businesses identify valuable AI opportunities and build intelligent features, automation, and data-driven products.",
+    "longDescription": "From AI assistants and intelligent search to predictive models and workflow automation, we focus on practical solutions that improve efficiency, customer experiences, and decision-making.",
+    "seo": {
+      "title": "AI & Machine Learning Services | Intelligent Business Solutions",
+      "description": "AI and machine learning development services for intelligent automation, AI assistants, predictive analytics and data-driven products.",
+      "keywords": [
+        "AI development",
+        "machine learning",
+        "AI automation",
+        "generative AI",
+        "LLM development",
+        "AI chatbot"
+      ]
+    },
+    "highlights": [
+      "Generative AI",
+      "AI Assistants",
+      "Machine Learning",
+      "Automation",
+      "Predictive Analytics"
+    ],
+    "approach": [
+      {
+        "title": "Identify Opportunities",
+        "description": "Find workflows and customer experiences where AI can create meaningful value."
+      },
+      {
+        "title": "Prototype",
+        "description": "Validate the idea quickly with a focused proof of concept and measurable outcome."
+      },
+      {
+        "title": "Build",
+        "description": "Develop reliable AI workflows, models, integrations, and user experiences."
+      },
+      {
+        "title": "Evaluate & Improve",
+        "description": "Measure quality, cost, latency, reliability, and business impact continuously."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "description": "Business problem, data and AI opportunity."
+      },
+      {
+        "step": "02",
+        "title": "Prototype",
+        "description": "Validate feasibility and expected value."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "description": "Models, AI workflows and product integration."
+      },
+      {
+        "step": "04",
+        "title": "Evaluate",
+        "description": "Quality, safety, cost and performance testing."
+      },
+      {
+        "step": "05",
+        "title": "Scale",
+        "description": "Production deployment and continuous improvement."
+      }
+    ],
+    "industries": [
+      "Healthcare",
+      "Finance",
+      "Retail",
+      "SaaS",
+      "Manufacturing",
+      "Customer Service"
+    ]
+  },
+  {
+    "id": 7,
+    "number": "07",
+    "slug": "ui-ux-design",
+    "title": "UI / UX Design",
+    "image": "/assets/ui_ux.jpg",
+    "shortDescription": "Clear, modern interfaces and user experiences designed around real customer needs.",
+    "description": "We turn complex ideas into intuitive digital experiences through research, UX strategy, visual design, and prototyping.",
+    "longDescription": "Our design process balances user needs, business goals, brand identity, accessibility, and technical feasibility to create interfaces that are easy to understand and enjoyable to use.",
+    "seo": {
+      "title": "UI UX Design Services | Product & Digital Experience Design",
+      "description": "UI and UX design services for websites, mobile apps and digital products with research, prototyping and scalable design systems.",
+      "keywords": [
+        "UI UX design",
+        "product design",
+        "UX research",
+        "web design",
+        "mobile app design",
+        "design systems"
+      ]
+    },
+    "highlights": [
+      "UX Research",
+      "UI Design",
+      "Prototyping",
+      "Design Systems",
+      "Product Design"
+    ],
+    "approach": [
+      {
+        "title": "Research",
+        "description": "Understand users, business goals, existing experiences, and usability challenges."
+      },
+      {
+        "title": "Structure",
+        "description": "Create user flows, information architecture, and interaction patterns."
+      },
+      {
+        "title": "Visualize",
+        "description": "Build a visual language, responsive interfaces, and reusable components."
+      },
+      {
+        "title": "Validate",
+        "description": "Prototype and test key journeys before moving into development."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Research",
+        "description": "Users, goals, competitors and existing experience."
+      },
+      {
+        "step": "02",
+        "title": "Define",
+        "description": "Personas, journeys, information architecture and flows."
+      },
+      {
+        "step": "03",
+        "title": "Design",
+        "description": "UI, interactions and responsive design system."
+      },
+      {
+        "step": "04",
+        "title": "Prototype",
+        "description": "Interactive experiences and usability validation."
+      },
+      {
+        "step": "05",
+        "title": "Handoff",
+        "description": "Developer-ready specifications and components."
+      }
+    ],
+    "industries": [
+      "SaaS",
+      "FinTech",
+      "Healthcare",
+      "E-commerce",
+      "Education",
+      "Startups"
+    ]
+  },
+  {
+    "id": 8,
+    "number": "08",
+    "slug": "devops-cloud",
+    "title": "DevOps & Cloud",
+    "image": "/assets/devops.jpg",
+    "shortDescription": "Reliable cloud infrastructure and delivery pipelines that help teams deploy faster and operate confidently.",
+    "description": "We improve development and operations through automation, CI/CD, cloud infrastructure, monitoring, and deployment practices.",
+    "longDescription": "We build practical DevOps foundations that make releases more repeatable, infrastructure more manageable, and applications easier to monitor and scale.",
+    "seo": {
+      "title": "DevOps & Cloud Services | CI/CD, Automation & Infrastructure",
+      "description": "DevOps and cloud services for CI/CD automation, infrastructure, deployment, monitoring and scalable application operations.",
+      "keywords": [
+        "DevOps services",
+        "cloud services",
+        "CI/CD",
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    "highlights": [
+      "CI/CD",
+      "Cloud Infrastructure",
+      "Docker",
+      "Monitoring",
+      "Deployment Automation"
+    ],
+    "approach": [
+      {
+        "title": "Assess",
+        "description": "Review infrastructure, deployment workflows, bottlenecks, reliability, and operational needs."
+      },
+      {
+        "title": "Automate",
+        "description": "Replace repetitive deployment and infrastructure tasks with reliable automation."
+      },
+      {
+        "title": "Optimize",
+        "description": "Improve performance, cost, scalability, observability, and developer experience."
+      },
+      {
+        "title": "Operate",
+        "description": "Establish monitoring, alerts, documentation, and sustainable operational practices."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "description": "Infrastructure, applications and deployment workflow."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Cloud architecture and automation roadmap."
+      },
+      {
+        "step": "03",
+        "title": "Automate",
+        "description": "CI/CD, infrastructure and deployment automation."
+      },
+      {
+        "step": "04",
+        "title": "Monitor",
+        "description": "Logs, metrics, alerts and application health."
+      },
+      {
+        "step": "05",
+        "title": "Optimize",
+        "description": "Reliability, performance and cloud efficiency."
+      }
+    ],
+    "industries": [
+      "SaaS",
+      "FinTech",
+      "Healthcare",
+      "E-commerce",
+      "Enterprise",
+      "Manufacturing"
+    ]
+  },
+  {
+    "id": 9,
+    "number": "09",
+    "slug": "data-analytics",
+    "title": "Data Analytics",
+    "image": "/assets/DA-3.jpg",
+    "shortDescription": "Turn business data into clear insights that support faster and better decisions.",
+    "description": "We connect, organize, visualize, and analyze data so teams can understand performance and act with confidence.",
+    "longDescription": "Our data analytics solutions bring together business data from multiple sources and transform it into dashboards, reports, metrics, and actionable insights.",
+    "seo": {
+      "title": "Data Analytics Services | BI, Dashboards & Business Intelligence",
+      "description": "Data analytics and business intelligence services for dashboards, reporting, data integration and actionable business insights.",
+      "keywords": [
+        "data analytics",
+        "business intelligence",
+        "BI dashboards",
+        "data visualization",
+        "analytics consulting"
+      ]
+    },
+    "highlights": [
+      "BI Dashboards",
+      "Data Visualization",
+      "Reporting",
+      "Data Integration",
+      "Business Intelligence"
+    ],
+    "approach": [
+      {
+        "title": "Understand",
+        "description": "Identify decision-making needs, KPIs, data sources, and reporting challenges."
+      },
+      {
+        "title": "Connect",
+        "description": "Bring relevant data together and establish consistent definitions and structures."
+      },
+      {
+        "title": "Analyze",
+        "description": "Turn raw information into useful trends, comparisons, and business insights."
+      },
+      {
+        "title": "Visualize",
+        "description": "Create clear dashboards and reports that make important information easy to act on."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "description": "Business questions, KPIs and data sources."
+      },
+      {
+        "step": "02",
+        "title": "Integrate",
+        "description": "Connect and structure relevant data."
+      },
+      {
+        "step": "03",
+        "title": "Analyze",
+        "description": "Find patterns, trends and actionable insights."
+      },
+      {
+        "step": "04",
+        "title": "Visualize",
+        "description": "Build dashboards and business reports."
+      },
+      {
+        "step": "05",
+        "title": "Improve",
+        "description": "Refine metrics and decision-making over time."
+      }
+    ],
+    "industries": [
+      "Retail",
+      "Finance",
+      "Healthcare",
+      "Manufacturing",
+      "Logistics",
+      "SaaS"
+    ]
+  },
+  {
+    "id": 10,
+    "number": "10",
+    "slug": "erp-solutions",
+    "title": "ERP Solutions",
+    "image": "/assets/ERP.png",
+    "shortDescription": "Connected business systems that bring processes, data, and teams together.",
+    "description": "We help businesses modernize and integrate core operations with practical ERP solutions and custom workflows.",
+    "longDescription": "Our ERP approach focuses on connecting business processes, reducing manual work, improving visibility, and creating systems that support growth without adding unnecessary complexity.",
+    "seo": {
+      "title": "ERP Solutions & Integration Services | Business Process Automation",
+      "description": "ERP solutions and integration services that connect business processes, improve visibility and automate core operations.",
+      "keywords": [
+        "ERP solutions",
+        "ERP integration",
+        "business process automation",
+        "enterprise software",
+        "ERP development"
+      ]
+    },
+    "highlights": [
+      "ERP Integration",
+      "Workflow Automation",
+      "Business Systems",
+      "Custom Modules",
+      "Reporting"
+    ],
+    "approach": [
+      {
+        "title": "Map Processes",
+        "description": "Understand current workflows, teams, systems, dependencies, and operational pain points."
+      },
+      {
+        "title": "Design Solution",
+        "description": "Define modules, integrations, workflows, roles, permissions, and reporting needs."
+      },
+      {
+        "title": "Implement",
+        "description": "Configure or develop the required capabilities and connect existing systems."
+      },
+      {
+        "title": "Enable Teams",
+        "description": "Test workflows, support adoption, document processes, and continuously improve the system."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "description": "Processes, teams, systems and business requirements."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "description": "Architecture, modules, integrations and roadmap."
+      },
+      {
+        "step": "03",
+        "title": "Implement",
+        "description": "Configuration, development and system integration."
+      },
+      {
+        "step": "04",
+        "title": "Validate",
+        "description": "Workflow, data, permissions and user acceptance testing."
+      },
+      {
+        "step": "05",
+        "title": "Launch",
+        "description": "Training, deployment, support and optimization."
+      }
+    ],
+    "industries": [
+      "Manufacturing",
+      "Retail",
+      "Distribution",
+      "Healthcare",
+      "Finance",
+      "Professional Services"
+    ]
+  }
+]
