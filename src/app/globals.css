@@ -1,32 +1,57 @@
 @import "tailwindcss";
 
 /* ============================================
-   DESIGN TOKENS
+   DESIGN TOKENS — Varahi Brand Palette
+   Primary Red  : #A90016
+   Secondary Red: #B71C2B
+   Dark Burgundy: #72000F
+   Cream BG     : #FDF8EF
+   Soft Pink    : #F8F0F0
+   Light Beige  : #F4E8D0
+   Gold Accent  : #F5B800
+   Primary Text : #1D1D1F
+   Secondary Text: #6B6768
 ============================================ */
 
 :root {
-  --primary: #38bdf8;
-  --secondary: #7c3aed;
-  --accent: #c0c7d1;
-  --background: #f8fafc;
-  --dark-text: #1f2937;
+  /* ── Core brand ── */
+  --primary:         #A90016;   /* primary red        */
+  --primary-dark:    #72000F;   /* dark burgundy      */
+  --primary-light:   #B71C2B;   /* secondary red      */
+  --secondary:       #F5B800;   /* golden yellow      */
+  --secondary-dark:  #D4A000;   /* darkened gold      */
+  --secondary-light: #FFD040;   /* lightened gold     */
+  --accent:          #F4E8D0;   /* light beige tint   */
 
-  /* Glassmorphism tokens */
-  --glass-bg: rgba(255, 255, 255, 0.55);
-  --glass-bg-heavy: rgba(255, 255, 255, 0.75);
-  --glass-bg-dark: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.75);
-  --glass-border-dark: rgba(255, 255, 255, 0.10);
-  --glass-blur: blur(20px);
-  --glass-blur-heavy: blur(32px);
-  --glass-shadow: 0 8px 32px rgba(56, 189, 248, 0.08);
-  --glass-shadow-lg: 0 24px 64px rgba(56, 189, 248, 0.12);
+  /* ── Backgrounds ── */
+  --background:      #FDF8EF;   /* cream              */
+  --background-alt:  #F8F0F0;   /* soft pink cards    */
+  --background-beige:#F4E8D0;   /* light beige        */
+  --surface:         #FFFFFF;
 
-  /* Colors */
-  --blue: #38bdf8;
-  --purple: #7c3aed;
-  --blue-soft: rgba(56, 189, 248, 0.15);
-  --purple-soft: rgba(124, 58, 237, 0.15);
+  /* ── Text ── */
+  --dark-text:       #1D1D1F;   /* primary text       */
+  --muted-text:      #6B6768;   /* secondary text     */
+  --light-text:      #FFFFFF;
+
+  /* ── Glassmorphism (light panels) ── */
+  --glass-bg:           rgba(255, 255, 255, 0.60);
+  --glass-bg-heavy:     rgba(255, 255, 255, 0.85);
+  --glass-bg-dark:      rgba(169, 0, 22, 0.06);
+  --glass-border:       rgba(255, 255, 255, 0.75);
+  --glass-border-warm:  rgba(245, 184, 0, 0.28);
+  --glass-border-dark:  rgba(169, 0, 22, 0.14);
+  --glass-blur:         blur(20px);
+  --glass-blur-heavy:   blur(32px);
+  --glass-shadow:       0 8px 32px rgba(169, 0, 22, 0.10);
+  --glass-shadow-lg:    0 24px 64px rgba(169, 0, 22, 0.14);
+  --glass-shadow-gold:  0 8px 32px rgba(245, 184, 0, 0.16);
+
+  /* ── Gradient stops ── */
+  --grad-red:    #A90016;
+  --grad-dark:   #72000F;
+  --grad-gold:   #F5B800;
+  --grad-cream:  #FDF8EF;
 }
 
 /* ============================================
@@ -48,11 +73,17 @@ body {
   font-family: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Subtle warm-cream radial wash behind the page */
+  background-image: radial-gradient(
+    ellipse 80% 60% at 50% -10%,
+    rgba(245, 184, 0, 0.08) 0%,
+    transparent 70%
+  );
 }
 
 ::selection {
-  background: var(--primary);
-  color: white;
+  background: var(--secondary);
+  color: var(--primary-dark);
 }
 
 a {
@@ -75,23 +106,23 @@ a {
   50%       { transform: translateY(-10px) rotate(3deg); }
 }
 
-/* Pulse glow — breathing box-shadow */
+/* Pulse glow — breathing box-shadow (deep red) */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+    box-shadow: 0 0 0 0 rgba(169, 0, 22, 0);
   }
   50% {
-    box-shadow: 0 0 40px 8px rgba(56, 189, 248, 0.25);
+    box-shadow: 0 0 40px 8px rgba(169, 0, 22, 0.30);
   }
 }
 
-/* Pulse glow purple variant */
+/* Pulse glow gold variant */
 @keyframes pulse-glow-purple {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    box-shadow: 0 0 0 0 rgba(245, 184, 0, 0);
   }
   50% {
-    box-shadow: 0 0 40px 8px rgba(124, 58, 237, 0.25);
+    box-shadow: 0 0 40px 8px rgba(245, 184, 0, 0.35);
   }
 }
 
@@ -197,43 +228,125 @@ a {
   animation: marquee 28s linear infinite;
 }
 
-/* Gradient text */
+/* Gradient text — symmetric: dark ends, gold glow center */
 .text-gradient {
-  background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+  background: linear-gradient(
+    90deg,
+    #72000F  0%,
+    #A90016  25%,
+    #F5B800  50%,
+    #A90016  75%,
+    #72000F  100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+/* Gradient text animated — same symmetric stops, shifting */
 .text-gradient-animated {
   background: linear-gradient(
-    270deg,
-    #38bdf8,
-    #7c3aed,
-    #38bdf8
+    90deg,
+    #72000F,
+    #A90016,
+    #F5B800,
+    #F5B800,
+    #A90016,
+    #72000F
   );
-  background-size: 300% 300%;
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradient-shift 5s ease infinite;
+  animation: gradient-shift 4s linear infinite;
 }
 
-/* Shimmer button overlay */
+/* Gold accent text */
+.text-gold {
+  color: var(--secondary);
+}
+
+/* Red accent text */
+.text-brand {
+  color: var(--primary);
+}
+
+/* Shimmer button overlay — Varahi gold sheen */
 .shimmer-btn::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     110deg,
-    transparent 30%,
-    rgba(255, 255, 255, 0.18) 50%,
-    transparent 70%
+    transparent 20%,
+    rgba(245, 184, 0, 0.22) 50%,
+    transparent 80%
   );
   background-size: 200% 100%;
   border-radius: inherit;
   animation: shimmer 2.5s linear infinite;
   pointer-events: none;
+}
+
+/* Brand gradient background — symmetric: dark ends, red glow center */
+.bg-brand-gradient {
+  background: linear-gradient(
+    90deg,
+    #72000F  0%,
+    #A90016  30%,
+    #B71C2B  50%,
+    #A90016  70%,
+    #72000F  100%
+  );
+}
+
+/* Gold gradient background — symmetric: dark gold ends, bright center */
+.bg-gold-gradient {
+  background: linear-gradient(
+    90deg,
+    #D4A000  0%,
+    #F5B800  30%,
+    #FFD040  50%,
+    #F5B800  70%,
+    #D4A000  100%
+  );
+}
+
+/* Uniform line divider — transparent → bright center → transparent */
+.gradient-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent          0%,
+    rgba(245,184,0,0.15) 20%,
+    rgba(245,184,0,0.55) 50%,
+    rgba(245,184,0,0.15) 80%,
+    transparent          100%
+  );
+}
+
+/* Warm cream surface */
+.bg-cream {
+  background: var(--background);
+}
+
+/* Red glow card hover utility */
+.hover-glow-red {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.hover-glow-red:hover {
+  box-shadow: 0 12px 40px rgba(169, 0, 22, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Gold glow card hover utility */
+.hover-glow-gold {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.hover-glow-gold:hover {
+  box-shadow: 0 12px 40px rgba(245, 184, 0, 0.30);
+  transform: translateY(-3px);
 }
 
 /* Glassmorphism card base */
@@ -253,12 +366,21 @@ a {
   box-shadow: var(--glass-shadow-lg);
 }
 
-/* Dark glass (for dark bg sections) */
+/* Dark glass (for dark/red bg sections) */
 .glass-card-dark {
-  background: var(--glass-bg-dark);
-  border: 1px solid var(--glass-border-dark);
+  background: rgba(169, 0, 22, 0.08);
+  border: 1px solid rgba(245, 184, 0, 0.20);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
+}
+
+/* Gold-tinted glass card */
+.glass-card-gold {
+  background: rgba(245, 184, 0, 0.10);
+  border: 1px solid rgba(245, 184, 0, 0.30);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow-gold);
 }
 
 /* Perspective container for stack cards */
@@ -269,7 +391,12 @@ a {
 /* Orbital ring decoration */
 .orbital-ring {
   border-radius: 50%;
-  border: 1px dashed rgba(56, 189, 248, 0.3);
+  border: 1px dashed rgba(245, 184, 0, 0.35);
+}
+
+.orbital-ring-red {
+  border-radius: 50%;
+  border: 1px dashed rgba(169, 0, 22, 0.25);
 }
 
 /* Noise texture overlay for glass panels */
@@ -292,12 +419,16 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: var(--background-alt);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #38bdf8, #7c3aed);
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
   border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--primary-dark), var(--secondary-dark));
 }
 
 /* ============================================
@@ -305,7 +436,8 @@ a {
 ============================================ */
 
 :focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--secondary);
   outline-offset: 3px;
   border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(245, 184, 0, 0.18);
 }

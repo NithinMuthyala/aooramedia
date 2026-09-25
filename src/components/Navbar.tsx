@@ -121,7 +121,7 @@ export default function Navbar() {
       <nav
         className={`mx-auto max-w-7xl rounded-2xl border transition-all duration-500 ${
           scrolled
-            ? "border-slate-200/80 bg-white/88 shadow-xl shadow-slate-900/8 backdrop-blur-2xl"
+            ? "border-[#F5B800]/20 bg-white/92 shadow-xl shadow-[#A90016]/8 backdrop-blur-2xl"
             : "border-white/70 bg-white/55 backdrop-blur-xl"
         }`}
       >
@@ -135,14 +135,21 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-[#1F2937]"
+            className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-[#1D1D1F]"
           >
             {/* Logo mark */}
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#38BDF8] to-[#7C3AED] text-sm font-bold text-white shadow-md shadow-[#7C3AED]/20">
+            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#A90016] to-[#72000F] text-sm font-bold text-[#F5B800] shadow-md shadow-[#A90016]/30">
               A
             </span>
             <span>
-              <span className="text-gradient">AVIORA</span>
+              <span
+                style={{
+                  background: "linear-gradient(90deg, #A90016 0%, #B71C2B 40%, #F5B800 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >AVIORA</span>
             </span>
           </Link>
 
@@ -156,15 +163,15 @@ export default function Navbar() {
                   href={item.href}
                   className={`desktop-nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-xl ${
                     active
-                      ? "text-[#7C3AED] font-semibold"
-                      : "text-[#1F2937]/65 hover:text-[#7C3AED]"
+                      ? "text-[#A90016] font-semibold"
+                      : "text-[#1D1D1F]/65 hover:text-[#A90016]"
                   }`}
                 >
                   {item.label}
 
-                  {/* Animated underline */}
+                  {/* Animated underline — red to gold */}
                   <span
-                    className={`absolute bottom-1 left-4 right-4 h-[2px] rounded-full bg-gradient-to-r from-[#38BDF8] to-[#7C3AED] transition-all duration-300 origin-left ${
+                    className={`absolute bottom-1 left-4 right-4 h-[2px] rounded-full bg-gradient-to-r from-[#A90016] to-[#F5B800] transition-all duration-300 origin-left ${
                       active ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
                     }`}
                   />
@@ -172,7 +179,7 @@ export default function Navbar() {
                   {/* Active / hover subtle background pill */}
                   <span
                     className={`absolute inset-0 rounded-xl transition-all duration-300 ${
-                      active ? "bg-[#7C3AED]/5" : "bg-[#7C3AED]/0 hover:bg-[#7C3AED]/5"
+                      active ? "bg-[#A90016]/6" : "bg-[#A90016]/0 hover:bg-[#A90016]/5"
                     }`}
                   />
                 </Link>
@@ -184,7 +191,7 @@ export default function Navbar() {
           <Link
             ref={ctaRef}
             href="/contact"
-            className="shimmer-btn relative hidden overflow-hidden rounded-xl bg-[#1F2937] px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-[#7C3AED] hover:shadow-purple-500/20 md:inline-flex items-center gap-2"
+            className="shimmer-btn relative hidden overflow-hidden rounded-xl bg-[#A90016] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#A90016]/25 transition-all duration-300 hover:bg-[#72000F] hover:shadow-[#A90016]/35 md:inline-flex items-center gap-2"
           >
             Book Now
             <span className="text-xs">→</span>
@@ -196,21 +203,21 @@ export default function Navbar() {
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#C0C7D1]/60 bg-white/60 text-[#1F2937] transition-all duration-300 hover:bg-white md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#F5B800]/40 bg-white/60 text-[#1D1D1F] transition-all duration-300 hover:bg-white md:hidden"
           >
             <span className="relative flex h-5 w-5 flex-col justify-center">
               <span
-                className={`absolute h-[2px] w-5 rounded-full bg-[#1F2937] transition-all duration-300 ${
+                className={`absolute h-[2px] w-5 rounded-full bg-[#A90016] transition-all duration-300 ${
                   menuOpen ? "rotate-45" : "-translate-y-[6px]"
                 }`}
               />
               <span
-                className={`absolute h-[2px] w-5 rounded-full bg-[#1F2937] transition-all duration-300 ${
+                className={`absolute h-[2px] w-5 rounded-full bg-[#A90016] transition-all duration-300 ${
                   menuOpen ? "opacity-0 scale-x-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute h-[2px] w-5 rounded-full bg-[#1F2937] transition-all duration-300 ${
+                className={`absolute h-[2px] w-5 rounded-full bg-[#A90016] transition-all duration-300 ${
                   menuOpen ? "-rotate-45" : "translate-y-[6px]"
                 }`}
               />
@@ -223,7 +230,7 @@ export default function Navbar() {
           ref={mobileMenuRef}
           className="h-0 overflow-hidden opacity-0 md:hidden"
         >
-          <div className="border-t border-[#C0C7D1]/40 px-5 pb-5 pt-4">
+          <div className="border-t border-[#F5B800]/20 px-5 pb-5 pt-4">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => {
                 const active = isLinkActive(item.href);
@@ -234,12 +241,12 @@ export default function Navbar() {
                     onClick={closeMenu}
                     className={`mobile-nav-item rounded-xl px-4 py-3 text-sm font-medium transition-all duration-300 flex items-center justify-between ${
                       active
-                        ? "bg-[#7C3AED]/10 text-[#7C3AED] font-semibold"
-                        : "text-[#1F2937]/75 hover:bg-white/70 hover:text-[#7C3AED]"
+                        ? "bg-[#A90016]/8 text-[#A90016] font-semibold"
+                        : "text-[#1D1D1F]/75 hover:bg-[#FDF8EF] hover:text-[#A90016]"
                     }`}
                   >
                     <span>{item.label}</span>
-                    {active && <span className="h-1.5 w-1.5 rounded-full bg-[#7C3AED]" />}
+                    {active && <span className="h-1.5 w-1.5 rounded-full bg-[#A90016]" />}
                   </Link>
                 );
               })}
@@ -249,7 +256,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="mobile-nav-item mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1F2937] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#7C3AED]"
+              className="mobile-nav-item mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#A90016] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#72000F]"
             >
               Book Now →
             </Link>

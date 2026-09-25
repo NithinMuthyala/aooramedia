@@ -22,6 +22,10 @@ const serviceIcons: Record<string, string> = {
   "devops-cloud":           "▲",
   "data-analytics":         "📈",
   "erp-solutions":          "⚙",
+  "ads-linkedin-google-meta": "◎",
+  "ai-ads":                 "✦",
+  "product-shoot":          "⬤",
+  "personal-branding":      "◐",
 };
 
 export default function Services() {
@@ -40,7 +44,6 @@ export default function Services() {
         const number = item.querySelector(".service-number");
         const line   = item.querySelector(".service-line");
 
-        /* Text reveal */
         if (text) {
           gsap.fromTo(
             text,
@@ -52,7 +55,6 @@ export default function Services() {
           );
         }
 
-        /* Image reveal + parallax */
         if (image) {
           gsap.fromTo(
             image,
@@ -68,7 +70,6 @@ export default function Services() {
           });
         }
 
-        /* Number */
         if (number) {
           gsap.fromTo(
             number,
@@ -80,7 +81,6 @@ export default function Services() {
           );
         }
 
-        /* Accent line */
         if (line) {
           gsap.fromTo(
             line,
@@ -93,7 +93,6 @@ export default function Services() {
         }
       });
 
-      /* Section heading */
       gsap.fromTo(
         ".services-heading",
         { y: 50, opacity: 0 },
@@ -103,7 +102,6 @@ export default function Services() {
         }
       );
 
-      /* CTA */
       gsap.fromTo(
         ".services-cta",
         { y: 70, opacity: 0, scale: 0.97 },
@@ -121,15 +119,15 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="services"
-      className="relative overflow-hidden bg-[#F8FAFC]"
+      className="relative overflow-hidden bg-[#FDF8EF]"
     >
       {/* =====================================================
-          BACKGROUND GLOW
+          BACKGROUND GLOW — deep red palette
       ===================================================== */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute left-[-200px] top-[5%] h-[500px] w-[500px] rounded-full bg-[#38BDF8]/10 blur-[140px]" />
-        <div className="absolute right-[-200px] top-[35%] h-[600px] w-[600px] rounded-full bg-[#7C3AED]/10 blur-[160px]" />
-        <div className="absolute bottom-[-200px] left-[20%] h-[500px] w-[500px] rounded-full bg-[#38BDF8]/5 blur-[140px]" />
+        <div className="absolute left-[-200px] top-[5%] h-[500px] w-[500px] rounded-full bg-[#A90016]/8 blur-[140px]" />
+        <div className="absolute right-[-200px] top-[35%] h-[600px] w-[600px] rounded-full bg-[#F5B800]/10 blur-[160px]" />
+        <div className="absolute bottom-[-200px] left-[20%] h-[500px] w-[500px] rounded-full bg-[#A90016]/5 blur-[140px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8 md:py-32">
@@ -138,18 +136,19 @@ export default function Services() {
             HEADER
         =================================================== */}
         <div className="services-heading mx-auto max-w-4xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7C3AED]">
+          {/* Gold eyebrow label */}
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F5B800]">
             Our Services
           </span>
 
-          <h2 className="mt-5 text-4xl font-bold tracking-[-0.045em] text-[#1F2937] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="mt-5 text-4xl font-bold tracking-[-0.045em] text-[#1D1D1F] sm:text-5xl md:text-6xl lg:text-7xl">
             Technology that moves
             <span className="block text-gradient">
               your business forward.
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#1F2937]/60 md:text-lg md:leading-8">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#1D1D1F]/60 md:text-lg md:leading-8">
             From strategy and design to development, security,
             optimization and AI, we build digital solutions
             designed around your business goals.
@@ -167,7 +166,7 @@ export default function Services() {
             return (
               <article
                 key={service.id}
-                className="service-item relative border-t border-[#C0C7D1]/40 py-20 md:py-28"
+                className="service-item relative border-t border-[#A90016]/15 py-20 md:py-28"
               >
                 <div
                   className={`grid items-center gap-12 lg:grid-cols-2 lg:gap-20 ${
@@ -178,26 +177,28 @@ export default function Services() {
                   <div className="service-text">
                     {/* Number + label */}
                     <div className="flex items-center gap-4">
-                      <span className="service-number text-sm font-bold tracking-[0.2em] text-[#7C3AED]">
+                      {/* Gold number */}
+                      <span className="service-number text-sm font-bold tracking-[0.2em] text-[#F5B800]">
                         {service.number}
                       </span>
-                      <div className="service-line h-px w-16 origin-left bg-gradient-to-r from-[#38BDF8] to-[#7C3AED]" />
-                      <span className="text-xs uppercase tracking-[0.15em] text-[#1F2937]/30">
+                      {/* Red-to-gold accent line */}
+                      <div className="service-line h-px w-16 origin-left bg-gradient-to-r from-[#A90016] to-[#F5B800]" />
+                      <span className="text-xs uppercase tracking-[0.15em] text-[#1D1D1F]/30">
                         Service
                       </span>
                     </div>
 
                     {/* Title */}
-                    <h3 className="mt-7 max-w-xl text-4xl font-bold leading-[0.95] tracking-[-0.045em] text-[#1F2937] sm:text-5xl md:text-6xl">
+                    <h3 className="mt-7 max-w-xl text-4xl font-bold leading-[0.95] tracking-[-0.045em] text-[#1D1D1F] sm:text-5xl md:text-6xl">
                       {service.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-7 max-w-xl text-base leading-7 text-[#1F2937]/60 md:text-lg md:leading-8">
+                    <p className="mt-7 max-w-xl text-base leading-7 text-[#1D1D1F]/60 md:text-lg md:leading-8">
                       {service.description}
                     </p>
 
-                    {/* Highlight chips — motion hover */}
+                    {/* Highlight chips */}
                     <div className="mt-7 flex max-w-xl flex-wrap gap-2">
                       {service.highlights.slice(0, 5).map((highlight) => (
                         <motion.span
@@ -205,18 +206,18 @@ export default function Services() {
                           whileHover={{ scale: 1.06, y: -2 }}
                           whileTap={{ scale: 0.97 }}
                           transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                          className="cursor-default rounded-full border border-[#C0C7D1]/50 bg-white/70 px-3 py-1.5 text-xs font-medium text-[#1F2937]/60 backdrop-blur-xl transition-colors hover:border-[#38BDF8]/40 hover:bg-white hover:text-[#7C3AED]"
+                          className="cursor-default rounded-full border border-[#A90016]/20 bg-white/70 px-3 py-1.5 text-xs font-medium text-[#1D1D1F]/60 backdrop-blur-xl transition-colors hover:border-[#A90016]/40 hover:bg-white hover:text-[#A90016]"
                         >
                           {highlight}
                         </motion.span>
                       ))}
                     </div>
 
-                    {/* CTA Link */}
+                    {/* CTA Link — deep red button */}
                     <div className="mt-9">
                       <Link
                         href={`/services/${service.slug}`}
-                        className="shimmer-btn group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-[#1F2937] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/10 transition-all duration-300 hover:-translate-y-1 hover:bg-[#7C3AED] hover:shadow-[#7C3AED]/20"
+                        className="shimmer-btn group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-[#A90016] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#A90016]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#72000F] hover:shadow-[#A90016]/35"
                       >
                         Explore Service
                         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -225,17 +226,19 @@ export default function Services() {
                   </div>
 
                   {/* IMAGE PANEL */}
-                  <div className="service-image" >
-                    <div style={{
-    backgroundImage: `url(${service.image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }} className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/80 bg-white/60 shadow-2xl shadow-slate-900/10 backdrop-blur-2xl">
-
-                      {/* Glow blobs */}
-                      <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#38BDF8]/20 blur-[100px] transition-transform duration-700 group-hover:scale-125" />
-                      <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#7C3AED]/20 blur-[100px] transition-transform duration-700 group-hover:scale-125" />
+                  <div className="service-image">
+                    <div
+                      style={{
+                        backgroundImage: `url(${service.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                      }}
+                      className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-[#A90016]/15 bg-white/60 shadow-2xl shadow-[#A90016]/8 backdrop-blur-2xl"
+                    >
+                      {/* Glow blobs — deep red + gold */}
+                      <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#A90016]/15 blur-[100px] transition-transform duration-700 group-hover:scale-125" />
+                      <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#F5B800]/12 blur-[100px] transition-transform duration-700 group-hover:scale-125" />
                     </div>
                   </div>
                 </div>
@@ -245,30 +248,33 @@ export default function Services() {
         </div>
 
         {/* ===================================================
-            FINAL CTA BANNER
+            FINAL CTA BANNER — deep red background
         =================================================== */}
-        <div className="services-cta relative mt-16 overflow-hidden rounded-[2rem] border border-[#C0C7D1]/40 bg-white/70 shadow-xl shadow-slate-900/5 backdrop-blur-xl md:mt-20">
-
+        <div
+          className="services-cta relative mt-16 overflow-hidden rounded-[2rem] shadow-xl md:mt-20"
+          style={{ background: "linear-gradient(90deg, #72000F 0%, #A90016 30%, #B71C2B 50%, #A90016 70%, #72000F 100%)" }}
+        >
           {/* CTA Glows */}
-          <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#38BDF8]/15 blur-[100px]" />
-          <div className="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-[#7C3AED]/15 blur-[100px]" />
+          <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#F5B800]/15 blur-[100px]" />
+          <div className="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-white/5 blur-[100px]" />
 
           <div className="relative z-10 grid items-center gap-8 p-8 md:grid-cols-[1fr_auto] md:p-14">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7C3AED]">
+              {/* Gold eyebrow */}
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F5B800]">
                 Let&apos;s build together
               </span>
 
-              <h3 className="mt-4 max-w-2xl text-3xl font-bold tracking-[-0.04em] text-[#1F2937] md:text-5xl">
+              <h3 className="mt-4 max-w-2xl text-3xl font-bold tracking-[-0.04em] text-white md:text-5xl">
                 Have a project in mind?
               </h3>
 
-              <p className="mt-4 max-w-xl text-base leading-7 text-[#1F2937]/60 md:text-lg">
+              <p className="mt-4 max-w-xl text-base leading-7 text-white/65 md:text-lg">
                 Let&apos;s turn your idea into a digital experience
                 that creates real business impact.
               </p>
 
-              {/* Mini stat row */}
+              {/* Mini stat row — gold text */}
               <div className="mt-8 flex flex-wrap gap-6">
                 {[
                   { label: "Projects", value: "50+" },
@@ -276,16 +282,17 @@ export default function Services() {
                   { label: "Uptime",   value: "99%" },
                 ].map((s) => (
                   <div key={s.label}>
-                    <p className="text-2xl font-bold tracking-[-0.03em] text-gradient">{s.value}</p>
-                    <p className="text-xs text-[#1F2937]/45 mt-0.5">{s.label}</p>
+                    <p className="text-2xl font-bold tracking-[-0.03em] text-[#F5B800]">{s.value}</p>
+                    <p className="text-xs text-white/45 mt-0.5">{s.label}</p>
                   </div>
                 ))}
               </div>
             </div>
 
+            {/* Gold CTA button */}
             <Link
               href="#contact"
-              className="shimmer-btn group relative inline-flex w-fit items-center gap-3 overflow-hidden rounded-xl bg-[#1F2937] px-7 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#7C3AED] hover:shadow-[#7C3AED]/20"
+              className="shimmer-btn group relative inline-flex w-fit items-center gap-3 overflow-hidden rounded-xl bg-[#F5B800] px-7 py-4 text-sm font-semibold text-[#72000F] shadow-lg shadow-[#F5B800]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#FFD040] hover:shadow-[#F5B800]/35"
             >
               Start a Conversation
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>

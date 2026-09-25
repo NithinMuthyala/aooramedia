@@ -40,8 +40,8 @@ export default function PageBanner({
   breadcrumbs,
   cta,
   secondaryLink,
-  glowLeft  = "#38BDF8",
-  glowRight = "#7C3AED",
+  glowLeft  = "#A90016",
+  glowRight = "#F5B800",
   showScroll = true,
 }: PageBannerProps) {
   const bannerRef = useRef<HTMLElement>(null);
@@ -93,15 +93,15 @@ export default function PageBanner({
   return (
     <section
       ref={bannerRef}
-      className="relative overflow-hidden bg-[#F8FAFC] pt-32 pb-20 md:pt-40 md:pb-28"
+      className="relative overflow-hidden bg-[#FDF8EF] pt-32 pb-20 md:pt-40 md:pb-28"
     >
       {/* ── Background grid ─────────────────────── */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(31,41,55,1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(31,41,55,1) 1px, transparent 1px)
+            linear-gradient(rgba(142,27,27,1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(142,27,27,1) 1px, transparent 1px)
           `,
           backgroundSize: "60px 60px",
         }}
@@ -117,13 +117,13 @@ export default function PageBanner({
           className="pb-glow-right absolute -bottom-32 -right-48 h-[500px] w-[500px] rounded-full blur-[140px]"
           style={{ background: `${glowRight}12` }}
         />
-        <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#38BDF8]/4 blur-[100px]" />
+        <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F5B800]/6 blur-[100px]" />
       </div>
 
       {/* ── Decorative orbital rings ─────────────── */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div className="h-[500px] w-[500px] rounded-full border border-[#38BDF8]/8 animate-spin-slow" />
-        <div className="absolute h-[700px] w-[700px] rounded-full border border-dashed border-[#7C3AED]/6 animate-spin-slow-reverse" />
+        <div className="h-[500px] w-[500px] rounded-full border border-[#A90016]/8 animate-spin-slow" />
+        <div className="absolute h-[700px] w-[700px] rounded-full border border-dashed border-[#F5B800]/6 animate-spin-slow-reverse" />
       </div>
 
       {/* ── Main content ────────────────────────── */}
@@ -131,19 +131,19 @@ export default function PageBanner({
 
         {/* Breadcrumbs */}
         {breadcrumbs && breadcrumbs.length > 0 && (
-          <nav className="pb-breadcrumb mb-8 flex items-center gap-2 text-xs text-[#1F2937]/45">
+          <nav className="pb-breadcrumb mb-8 flex items-center gap-2 text-xs text-[#1D1D1F]/45">
             {breadcrumbs.map((crumb, i) => (
               <span key={i} className="flex items-center gap-2">
-                {i > 0 && <span className="text-[#C0C7D1]">/</span>}
+                {i > 0 && <span className="text-[#A90016]">/</span>}
                 {crumb.href ? (
                   <Link
                     href={crumb.href}
-                    className="font-medium transition-colors hover:text-[#7C3AED]"
+                    className="font-medium transition-colors hover:text-[#A90016]"
                   >
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="font-semibold text-[#1F2937]/70">{crumb.label}</span>
+                  <span className="font-semibold text-[#1D1D1F]/70">{crumb.label}</span>
                 )}
               </span>
             ))}
@@ -152,19 +152,19 @@ export default function PageBanner({
 
         {/* Tag pill */}
         {tag && (
-          <div className="pb-tag mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#C0C7D1]/60 bg-white/65 px-5 py-2.5 shadow-sm backdrop-blur-xl">
+          <div className="pb-tag mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#F5B800]/40 bg-white/75 px-5 py-2.5 shadow-sm backdrop-blur-xl">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-[#38BDF8] opacity-75 animate-ping" />
-              <span className="relative h-2 w-2 rounded-full bg-[#38BDF8]" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-[#A90016] opacity-75 animate-ping" />
+              <span className="relative h-2 w-2 rounded-full bg-[#A90016]" />
             </span>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1F2937]/60">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1D1D1F]/60">
               {tag}
             </span>
           </div>
         )}
 
         {/* Heading */}
-        <h1 className="pb-heading max-w-5xl text-[clamp(2.6rem,5.5vw,5rem)] font-bold leading-[0.93] tracking-[-0.045em] text-[#1F2937]">
+        <h1 className="pb-heading max-w-5xl text-[clamp(2.6rem,5.5vw,5rem)] font-bold leading-[0.93] tracking-[-0.045em] text-[#1D1D1F]">
           {heading}
           {headingAccent && (
             <>
@@ -176,7 +176,7 @@ export default function PageBanner({
 
         {/* Description */}
         {description && (
-          <p className="pb-desc mt-7 max-w-2xl text-base leading-7 text-[#1F2937]/60 md:text-lg md:leading-8">
+          <p className="pb-desc mt-7 max-w-2xl text-base leading-7 text-[#1D1D1F]/60 md:text-lg md:leading-8">
             {description}
           </p>
         )}
@@ -187,7 +187,7 @@ export default function PageBanner({
             {cta && (
               <Link
                 href={cta.href}
-                className="pb-cta shimmer-btn relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-[#1F2937] px-7 py-4 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition-colors duration-300 hover:bg-[#7C3AED] hover:shadow-purple-500/20"
+                className="pb-cta shimmer-btn relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-[#A90016] px-7 py-4 text-sm font-semibold text-white shadow-xl shadow-[#A90016]/20 transition-all duration-300 hover:bg-[#72000F] hover:shadow-[#A90016]/35"
               >
                 {cta.label}
                 <span>→</span>
@@ -196,7 +196,7 @@ export default function PageBanner({
             {secondaryLink && (
               <Link
                 href={secondaryLink.href}
-                className="pb-cta inline-flex items-center gap-2 text-sm font-medium text-[#1F2937]/60 transition-colors hover:text-[#7C3AED]"
+                className="pb-cta inline-flex items-center gap-2 text-sm font-medium text-[#1D1D1F]/60 transition-colors hover:text-[#A90016]"
               >
                 {secondaryLink.label}
                 <span className="text-xs">↓</span>
@@ -209,8 +209,8 @@ export default function PageBanner({
       {/* ── Scroll indicator ────────────────────── */}
       {showScroll && (
         <div className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
-          <div className="animate-bounce-y h-12 w-px bg-gradient-to-b from-transparent via-[#C0C7D1] to-[#38BDF8]" />
-          <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#1F2937]/35">
+          <div className="animate-bounce-y h-12 w-px bg-gradient-to-b from-transparent via-[#F5B800]/60 to-[#A90016]" />
+          <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#1D1D1F]/35">
             Scroll
           </span>
         </div>

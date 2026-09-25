@@ -22,8 +22,8 @@ export default function ProjectsPage() {
         ]}
         cta={{ label: "Start a Project", href: "/contact" }}
         secondaryLink={{ label: "View our services", href: "/services" }}
-        glowLeft="#7C3AED"
-        glowRight="#38BDF8"
+        glowLeft="#F5B800"
+        glowRight="#A90016"
         showScroll={false}
       />
       <ProjectsContent />

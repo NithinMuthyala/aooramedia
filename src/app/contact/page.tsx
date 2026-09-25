@@ -20,8 +20,8 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact" },
         ]}
-        glowLeft="#38BDF8"
-        glowRight="#7C3AED"
+        glowLeft="#A90016"
+        glowRight="#F5B800"
         showScroll={false}
       />
       <Contact />

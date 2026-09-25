@@ -813,5 +813,333 @@
       "Finance",
       "Professional Services"
     ]
+  },
+  {
+    "id": 11,
+    "number": "11",
+    "slug": "ads-linkedin-google-meta",
+    "title": "Ads — LinkedIn, Google & Meta",
+    "image": "/assets/ads_social.jpg",
+    "shortDescription": "Targeted paid advertising on LinkedIn, Google, and Meta that drives qualified traffic and measurable ROI.",
+    "description": "We plan, launch, and optimize paid ad campaigns across LinkedIn, Google, and Meta to reach the right audience at the right moment.",
+    "longDescription": "From search and display ads on Google to sponsored content on LinkedIn and Meta's full social ecosystem, we manage every layer of your paid strategy — audience research, creative direction, bid management, A/B testing, and performance reporting — so your budget works harder.",
+    "seo": {
+      "title": "LinkedIn, Google & Meta Ads Services | Paid Advertising Agency",
+      "description": "Expert paid advertising services on LinkedIn, Google, and Meta. Strategy, campaign setup, creative, targeting, and performance optimization for maximum ROI.",
+      "keywords": [
+        "LinkedIn ads",
+        "Google ads",
+        "Meta ads",
+        "paid advertising",
+        "PPC management",
+        "social media advertising"
+      ]
+    },
+    "highlights": [
+      "Google Search & Display",
+      "LinkedIn Sponsored Ads",
+      "Meta & Instagram Ads",
+      "Audience Targeting",
+      "Performance Reporting"
+    ],
+    "approach": [
+      {
+        "title": "Audience & Platform Strategy",
+        "description": "Identify the right platforms, audience segments, and ad formats based on your business goals and customer profile."
+      },
+      {
+        "title": "Creative & Messaging",
+        "description": "Develop scroll-stopping ad creatives, compelling copy, and landing pages optimized for conversion."
+      },
+      {
+        "title": "Campaign Execution",
+        "description": "Launch structured campaigns with precise targeting, bid strategies, and tracking across all platforms."
+      },
+      {
+        "title": "Optimize & Scale",
+        "description": "Continuously test, refine, and scale winning campaigns while cutting spend on underperformers."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Research",
+        "description": "Audience, competitors, platforms and budget allocation."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "description": "Campaign structure, ad formats and creative direction."
+      },
+      {
+        "step": "03",
+        "title": "Launch",
+        "description": "Ads, targeting, tracking and pixel setup."
+      },
+      {
+        "step": "04",
+        "title": "Optimize",
+        "description": "A/B testing, bid adjustments and audience refinement."
+      },
+      {
+        "step": "05",
+        "title": "Report",
+        "description": "Performance insights, ROAS analysis and scaling strategy."
+      }
+    ],
+    "industries": [
+      "E-commerce",
+      "SaaS",
+      "Real Estate",
+      "Education",
+      "Healthcare",
+      "Professional Services"
+    ]
+  },
+  {
+    "id": 12,
+    "number": "12",
+    "slug": "ai-ads",
+    "title": "AI Ads",
+    "image": "/assets/ai_ads.jpg",
+    "shortDescription": "AI-powered advertising that creates, tests, and optimizes high-performing ad creatives at scale.",
+    "description": "We leverage AI tools and generative models to produce, personalize, and continuously improve ad campaigns faster than traditional workflows allow.",
+    "longDescription": "AI Ads combines the speed of generative AI with data-driven performance marketing. We use AI to generate ad variations, predict winning creatives, automate audience targeting, and deliver personalized ad experiences — dramatically reducing cost-per-acquisition while increasing output quality and velocity.",
+    "seo": {
+      "title": "AI Ads Services | AI-Powered Advertising & Creative Generation",
+      "description": "AI-powered advertising services that use generative AI for creative production, personalization, automated targeting, and campaign optimization at scale.",
+      "keywords": [
+        "AI ads",
+        "AI advertising",
+        "generative AI ads",
+        "AI creative generation",
+        "automated ad optimization",
+        "AI marketing"
+      ]
+    },
+    "highlights": [
+      "AI Creative Generation",
+      "Dynamic Ad Personalization",
+      "Predictive Targeting",
+      "Automated A/B Testing",
+      "Performance Optimization"
+    ],
+    "approach": [
+      {
+        "title": "Data & Brief",
+        "description": "Gather brand assets, audience data, and performance goals to train and guide AI workflows."
+      },
+      {
+        "title": "AI Creative Production",
+        "description": "Use generative AI to produce high volumes of ad variations — copy, visuals, and video — fast."
+      },
+      {
+        "title": "Test & Learn",
+        "description": "Run multivariate tests across creatives, audiences, and placements using AI-driven insights."
+      },
+      {
+        "title": "Automate & Scale",
+        "description": "Automate winning ad combinations and continuously refresh creatives to prevent fatigue."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Brief",
+        "description": "Goals, brand guidelines, audience and platform targets."
+      },
+      {
+        "step": "02",
+        "title": "Generate",
+        "description": "AI-produced ad creatives, copy variants and visuals."
+      },
+      {
+        "step": "03",
+        "title": "Test",
+        "description": "Multivariate experiments across creatives and audiences."
+      },
+      {
+        "step": "04",
+        "title": "Optimize",
+        "description": "AI-driven bid, targeting and creative refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scale",
+        "description": "Automate top performers and refresh creative cycles."
+      }
+    ],
+    "industries": [
+      "E-commerce",
+      "Retail",
+      "SaaS",
+      "Consumer Brands",
+      "Education",
+      "Startups"
+    ]
+  },
+  {
+    "id": 13,
+    "number": "13",
+    "slug": "product-shoot",
+    "title": "Product Shoot",
+    "image": "/assets/product_shoot.jpg",
+    "shortDescription": "Professional product photography that makes your products impossible to scroll past.",
+    "description": "We produce high-quality product photography styled for e-commerce, social media, advertising, and brand campaigns.",
+    "longDescription": "Great product imagery is a direct revenue driver. Our product shoot service covers concept and styling, studio or location setup, professional photography, post-production editing, and final delivery in formats ready for digital and print. Whether you need clean white-background shots, lifestyle imagery, or creative campaign visuals, we bring your product to life.",
+    "seo": {
+      "title": "Product Photography Services | E-commerce & Brand Product Shoots",
+      "description": "Professional product photography for e-commerce, social media, and advertising. Studio shoots, lifestyle imagery, and post-production editing included.",
+      "keywords": [
+        "product photography",
+        "product shoot",
+        "e-commerce photography",
+        "product images",
+        "brand photography",
+        "commercial photography"
+      ]
+    },
+    "highlights": [
+      "Studio Photography",
+      "Lifestyle Shoots",
+      "E-commerce Ready Images",
+      "Post-Production Editing",
+      "Campaign Visuals"
+    ],
+    "approach": [
+      {
+        "title": "Creative Direction",
+        "description": "Define the visual style, mood, props, backgrounds, and shot list aligned with your brand and goals."
+      },
+      {
+        "title": "Production Setup",
+        "description": "Prepare studio or location, lighting rigs, and product styling for a smooth shoot day."
+      },
+      {
+        "title": "Photography",
+        "description": "Capture hero shots, lifestyle scenes, detail shots, and variations using professional equipment."
+      },
+      {
+        "title": "Post-Production",
+        "description": "Retouch, color grade, and deliver final images optimized for every platform and format."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Concept",
+        "description": "Brand brief, visual style and shot list planning."
+      },
+      {
+        "step": "02",
+        "title": "Prepare",
+        "description": "Product styling, props, studio and lighting setup."
+      },
+      {
+        "step": "03",
+        "title": "Shoot",
+        "description": "Professional photography across all required angles and scenes."
+      },
+      {
+        "step": "04",
+        "title": "Edit",
+        "description": "Retouching, color grading and background cleanup."
+      },
+      {
+        "step": "05",
+        "title": "Deliver",
+        "description": "Final images in web, social and print-ready formats."
+      }
+    ],
+    "industries": [
+      "E-commerce",
+      "Fashion",
+      "Food & Beverage",
+      "Consumer Electronics",
+      "Beauty & Lifestyle",
+      "Retail"
+    ]
+  },
+  {
+    "id": 14,
+    "number": "14",
+    "slug": "personal-branding",
+    "title": "Personal Branding",
+    "image": "/assets/personal_branding.jpg",
+    "shortDescription": "Build a distinctive personal brand that positions you as a credible authority in your industry.",
+    "description": "We help founders, executives, and creators define, articulate, and grow their personal brand across digital platforms.",
+    "longDescription": "Your personal brand is your reputation made visible. We work with individuals to uncover their unique positioning, craft their story, build a consistent visual and content identity, and grow their presence across LinkedIn, social media, podcasts, and the web — turning personal influence into professional opportunity.",
+    "seo": {
+      "title": "Personal Branding Services | Build Your Brand as a Leader",
+      "description": "Personal branding services for founders, executives and creators. Brand strategy, content, LinkedIn growth, visual identity and authority positioning.",
+      "keywords": [
+        "personal branding",
+        "personal brand strategy",
+        "LinkedIn personal brand",
+        "founder branding",
+        "executive branding",
+        "thought leadership"
+      ]
+    },
+    "highlights": [
+      "Brand Positioning",
+      "Content Strategy",
+      "LinkedIn Growth",
+      "Visual Identity",
+      "Thought Leadership"
+    ],
+    "approach": [
+      {
+        "title": "Discovery & Positioning",
+        "description": "Uncover your unique strengths, story, values, and audience to define a differentiated personal brand position."
+      },
+      {
+        "title": "Brand Identity",
+        "description": "Develop your visual identity, tone of voice, bio, and core messaging framework across all platforms."
+      },
+      {
+        "title": "Content & Presence",
+        "description": "Create a content strategy and execution plan that consistently builds authority and audience trust."
+      },
+      {
+        "title": "Grow & Amplify",
+        "description": "Expand reach through platform growth tactics, collaborations, media opportunities, and community engagement."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "description": "Story, strengths, audience and brand positioning."
+      },
+      {
+        "step": "02",
+        "title": "Define",
+        "description": "Visual identity, messaging, tone and platform strategy."
+      },
+      {
+        "step": "03",
+        "title": "Create",
+        "description": "Content, profile optimization and brand assets."
+      },
+      {
+        "step": "04",
+        "title": "Publish",
+        "description": "Consistent content distribution across platforms."
+      },
+      {
+        "step": "05",
+        "title": "Grow",
+        "description": "Audience building, engagement and authority amplification."
+      }
+    ],
+    "industries": [
+      "Founders & Entrepreneurs",
+      "Executives & Leaders",
+      "Creators & Influencers",
+      "Coaches & Consultants",
+      "Finance",
+      "Technology"
+    ]
   }
 ]

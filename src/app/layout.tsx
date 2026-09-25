@@ -39,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="relative min-h-full flex flex-col bg-[#F8FAFC]">
+      <body className="relative min-h-full flex flex-col bg-[#FDF8EF]">
         {/* Custom interactive mouse cursor */}
         <CustomCursor />
 

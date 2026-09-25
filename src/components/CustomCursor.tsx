@@ -92,13 +92,13 @@ export default function CustomCursor() {
       {/* Center glowing dot */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#38BDF8] to-[#7C3AED] shadow-[0_0_12px_rgba(56,189,248,0.8)]"
+        className="fixed top-0 left-0 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#A90016] to-[#F5B800] shadow-[0_0_12px_rgba(56,189,248,0.8)]"
       />
 
       {/* Outer fluid trailing ring */}
       <div
         ref={ringRef}
-        className="fixed top-0 left-0 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#38BDF8]/50 backdrop-blur-[1px] transition-[border-color,background-color] duration-200"
+        className="fixed top-0 left-0 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#A90016]/50 backdrop-blur-[1px] transition-[border-color,background-color] duration-200"
       />
     </div>
   );

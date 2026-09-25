@@ -132,7 +132,7 @@ export default function ScrollBackground() {
       <div
         className="sb-blob-a absolute -left-[15vw] -top-[15vh] h-[55vw] w-[55vw] max-h-[700px] max-w-[700px] rounded-full opacity-[0.10]"
         style={{
-          background: "radial-gradient(circle, #38BDF8 0%, #7C3AED 60%, transparent 80%)",
+          background: "radial-gradient(circle, #A90016 0%, #F5B800 60%, transparent 80%)",
           filter: "blur(120px)",
           willChange: "transform, opacity",
         }}
@@ -142,7 +142,7 @@ export default function ScrollBackground() {
       <div
         className="sb-blob-b absolute -bottom-[15vh] -right-[15vw] h-[60vw] w-[60vw] max-h-[750px] max-w-[750px] rounded-full opacity-[0.09]"
         style={{
-          background: "radial-gradient(circle, #7C3AED 0%, #38BDF8 60%, transparent 80%)",
+          background: "radial-gradient(circle, #F5B800 0%, #A90016 60%, transparent 80%)",
           filter: "blur(140px)",
           willChange: "transform, opacity",
         }}
@@ -152,7 +152,7 @@ export default function ScrollBackground() {
       <div
         className="sb-blob-c absolute left-1/2 top-1/2 h-[40vw] w-[40vw] max-h-[500px] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.04]"
         style={{
-          background: "radial-gradient(circle, #38BDF8 0%, transparent 70%)",
+          background: "radial-gradient(circle, #A90016 0%, transparent 70%)",
           filter: "blur(100px)",
           willChange: "transform, opacity",
         }}
@@ -162,7 +162,7 @@ export default function ScrollBackground() {
       <div
         className="sb-blob-d absolute right-[5vw] top-[35vh] h-[35vw] w-[35vw] max-h-[450px] max-w-[450px] rounded-full opacity-[0.07]"
         style={{
-          background: "radial-gradient(circle, #7C3AED 0%, transparent 70%)",
+          background: "radial-gradient(circle, #F5B800 0%, transparent 70%)",
           filter: "blur(110px)",
           willChange: "transform, opacity",
         }}

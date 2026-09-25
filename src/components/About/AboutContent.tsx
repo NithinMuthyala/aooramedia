@@ -17,10 +17,10 @@ const values = [
 ];
 
 const team = [
-  { name: "Aryan Mehta",   role: "Founder & CEO",      gradient: "from-[#38BDF8] to-[#7C3AED]" },
-  { name: "Priya Sharma",  role: "Lead Designer",       gradient: "from-[#7C3AED] to-[#38BDF8]" },
-  { name: "Karan Singh",   role: "Full-Stack Engineer", gradient: "from-[#38BDF8] to-[#0EA5E9]" },
-  { name: "Nisha Patel",   role: "Project Manager",     gradient: "from-[#7C3AED] to-[#A855F7]" },
+  { name: "Aryan Mehta",   role: "Founder & CEO",      gradient: "from-[#A90016] to-[#F5B800]" },
+  { name: "Priya Sharma",  role: "Lead Designer",       gradient: "from-[#F5B800] to-[#A90016]" },
+  { name: "Karan Singh",   role: "Full-Stack Engineer", gradient: "from-[#A90016] to-[#A90016]" },
+  { name: "Nisha Patel",   role: "Project Manager",     gradient: "from-[#F5B800] to-[#F5B800]" },
 ];
 
 const timeline = [
@@ -66,13 +66,13 @@ export default function AboutContent() {
       <section className="about-section py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7C3AED]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F5B800]">
               Our Values
             </span>
-            <h2 className="mt-4 text-4xl font-bold tracking-[-0.04em] text-[#1F2937] sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.04em] text-[#1D1D1F] sm:text-5xl">
               How we work
             </h2>
-            <p className="mt-5 text-base leading-7 text-[#1F2937]/60">
+            <p className="mt-5 text-base leading-7 text-[#1D1D1F]/60">
               Six principles that shape every project we take on.
             </p>
           </div>
@@ -83,13 +83,13 @@ export default function AboutContent() {
                 key={v.title}
                 whileHover={{ y: -6, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 350, damping: 22 }}
-                className="group relative overflow-hidden rounded-3xl border border-[#C0C7D1]/40 bg-white/65 p-7 shadow-sm backdrop-blur-xl"
+                className="group relative overflow-hidden rounded-3xl border border-[#A90016]/40 bg-white/65 p-7 shadow-sm backdrop-blur-xl"
               >
-                <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-[#38BDF8]/8 blur-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <span className="text-2xl" style={{ color: "#38BDF8" }}>{v.icon}</span>
-                <h3 className="mt-4 text-lg font-bold text-[#1F2937]">{v.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#1F2937]/55">{v.desc}</p>
-                <div className="mt-5 h-[2px] w-8 rounded-full bg-gradient-to-r from-[#38BDF8] to-[#7C3AED] transition-all duration-500 group-hover:w-16" />
+                <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-[#A90016]/8 blur-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <span className="text-2xl" style={{ color: "#A90016" }}>{v.icon}</span>
+                <h3 className="mt-4 text-lg font-bold text-[#1D1D1F]">{v.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#1D1D1F]/55">{v.desc}</p>
+                <div className="mt-5 h-[2px] w-8 rounded-full bg-gradient-to-r from-[#A90016] to-[#F5B800] transition-all duration-500 group-hover:w-16" />
               </motion.div>
             ))}
           </div>
@@ -97,10 +97,10 @@ export default function AboutContent() {
       </section>
 
       {/* ── TIMELINE ───────────────────────────── */}
-      <section className="about-section bg-[#0F172A] py-24 md:py-32">
+      <section className="about-section bg-[#72000F] py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#38BDF8]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#A90016]">
               Our Journey
             </span>
             <h2 className="mt-4 text-4xl font-bold tracking-[-0.04em] text-white sm:text-5xl">
@@ -111,7 +111,7 @@ export default function AboutContent() {
 
           <div className="timeline-wrap relative">
             {/* Vertical line */}
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#38BDF8] via-[#7C3AED] to-transparent md:left-1/2" />
+            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#A90016] via-[#F5B800] to-transparent md:left-1/2" />
 
             <div className="space-y-10">
               {timeline.map((item, i) => (
@@ -124,10 +124,10 @@ export default function AboutContent() {
                   }`}
                 >
                   {/* Dot on the line */}
-                  <div className="absolute left-4 top-2 h-4 w-4 rounded-full border-2 border-[#38BDF8] bg-[#0F172A] shadow-[0_0_12px_rgba(56,189,248,0.6)] md:left-1/2 md:-translate-x-1/2" />
+                  <div className="absolute left-4 top-2 h-4 w-4 rounded-full border-2 border-[#A90016] bg-[#72000F] shadow-[0_0_12px_rgba(56,189,248,0.6)] md:left-1/2 md:-translate-x-1/2" />
 
                   <div className="glass-card-dark rounded-2xl border border-white/8 bg-white/4 p-6 backdrop-blur-xl flex-1">
-                    <span className="text-xs font-bold tracking-[0.2em] text-[#38BDF8]">{item.year}</span>
+                    <span className="text-xs font-bold tracking-[0.2em] text-[#A90016]">{item.year}</span>
                     <h3 className="mt-2 text-lg font-bold text-white">{item.label}</h3>
                     <p className="mt-2 text-sm leading-6 text-white/50">{item.desc}</p>
                   </div>
@@ -142,10 +142,10 @@ export default function AboutContent() {
       <section className="about-section py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7C3AED]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F5B800]">
               The Team
             </span>
-            <h2 className="mt-4 text-4xl font-bold tracking-[-0.04em] text-[#1F2937] sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.04em] text-[#1D1D1F] sm:text-5xl">
               People behind the work
             </h2>
           </div>
@@ -163,8 +163,8 @@ export default function AboutContent() {
                   <div className={`h-full w-full rounded-[1.5rem] bg-gradient-to-br ${member.gradient} shadow-xl`} />
                   <div className="absolute inset-0 rounded-[1.5rem] border border-white/40" />
                 </div>
-                <h3 className="mt-5 text-base font-bold text-[#1F2937]">{member.name}</h3>
-                <p className="mt-1 text-sm text-[#1F2937]/50">{member.role}</p>
+                <h3 className="mt-5 text-base font-bold text-[#1D1D1F]">{member.name}</h3>
+                <p className="mt-1 text-sm text-[#1D1D1F]/50">{member.role}</p>
               </motion.div>
             ))}
           </div>
@@ -172,11 +172,11 @@ export default function AboutContent() {
       </section>
 
       {/* ── CTA ────────────────────────────────── */}
-      <section className="about-section relative overflow-hidden bg-[#0F172A] py-24 md:py-32">
-        <div className="pointer-events-none absolute -left-40 top-0 h-[400px] w-[400px] rounded-full bg-[#38BDF8]/15 blur-[130px]" />
-        <div className="pointer-events-none absolute -right-40 bottom-0 h-[400px] w-[400px] rounded-full bg-[#7C3AED]/20 blur-[130px]" />
+      <section className="about-section relative overflow-hidden bg-[#72000F] py-24 md:py-32">
+        <div className="pointer-events-none absolute -left-40 top-0 h-[400px] w-[400px] rounded-full bg-[#A90016]/15 blur-[130px]" />
+        <div className="pointer-events-none absolute -right-40 bottom-0 h-[400px] w-[400px] rounded-full bg-[#F5B800]/20 blur-[130px]" />
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center lg:px-8">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#38BDF8]">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#A90016]">
             Join Us
           </span>
           <h2 className="mt-5 text-4xl font-bold tracking-[-0.04em] text-white md:text-6xl">
@@ -187,7 +187,7 @@ export default function AboutContent() {
           </p>
           <a
             href="/contact"
-            className="shimmer-btn relative mt-9 inline-flex items-center gap-3 overflow-hidden rounded-xl bg-white px-7 py-4 text-sm font-semibold text-[#1F2937] transition-all hover:-translate-y-1 hover:bg-[#38BDF8] hover:text-white hover:shadow-xl hover:shadow-[#38BDF8]/20"
+            className="shimmer-btn relative mt-9 inline-flex items-center gap-3 overflow-hidden rounded-xl bg-white px-7 py-4 text-sm font-semibold text-[#1D1D1F] transition-all hover:-translate-y-1 hover:bg-[#A90016] hover:text-white hover:shadow-xl hover:shadow-[#A90016]/20"
           >
             Start a Conversation →
           </a>
