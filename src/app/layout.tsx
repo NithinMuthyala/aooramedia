@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Aviora — Digital Agency | Web Development & Design",
+  title: "Varahi Advertising — Digital Agency | Web Development & Design",
   description:
     "We design and develop modern digital experiences that help businesses grow, connect with their customers, and move faster. Explore our web development, UI/UX, and AI services.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "AI automation",
   ],
   openGraph: {
-    title: "Aviora — Digital Agency",
+    title: "Varahi Advertising — Digital Agency",
     description: "Modern digital experiences for modern businesses.",
     type: "website",
   },
@@ -38,8 +38,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="relative min-h-full flex flex-col bg-[#FDF8EF]">
+      <body className="relative min-h-full flex flex-col bg-[#FDF8EF]" suppressHydrationWarning>
         {/* Custom interactive mouse cursor */}
         <CustomCursor />
 

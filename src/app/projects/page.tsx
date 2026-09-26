@@ -3,9 +3,9 @@ import PageBanner from "@/components/PageBanner";
 import ProjectsContent from "@/components/Projects/ProjectsContent";
 
 export const metadata: Metadata = {
-  title: "Projects — Aviora Case Studies & Portfolio",
+  title: "Projects — Varahi Advertising Case Studies & Portfolio",
   description:
-    "Explore Aviora's portfolio of digital products — from fintech dashboards and e-commerce to AI pipelines and healthcare platforms.",
+    "Explore Varahi Advertising's portfolio of digital products — from fintech dashboards and e-commerce to AI pipelines and healthcare platforms.",
 };
 
 export default function ProjectsPage() {

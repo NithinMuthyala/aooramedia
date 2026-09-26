@@ -9,6 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll() {
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     // Initialize Lenis with smooth physics
     const lenis = new Lenis({
       duration: 1.15,

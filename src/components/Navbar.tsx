@@ -139,7 +139,7 @@ export default function Navbar() {
           >
             {/* Logo mark */}
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#A90016] to-[#72000F] text-sm font-bold text-[#F5B800] shadow-md shadow-[#A90016]/30">
-              A
+              V
             </span>
             <span>
               <span
@@ -149,7 +149,7 @@ export default function Navbar() {
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}
-              >AVIORA</span>
+              >VARAHI ADVERTISING</span>
             </span>
           </Link>
 

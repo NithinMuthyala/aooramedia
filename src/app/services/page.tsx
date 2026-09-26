@@ -3,9 +3,9 @@ import PageBanner from "@/components/PageBanner";
 import Services from "@/components/Services/Services";
 
 export const metadata: Metadata = {
-  title: "Services — Aviora Digital Agency",
+  title: "Services — Varahi Advertising Agency",
   description:
-    "Explore Aviora's full range of digital services: web development, UI/UX design, mobile apps, AI automation, SEO, and cloud DevOps.",
+    "Explore Varahi Advertising's full range of digital services: web development, UI/UX design, mobile apps, AI automation, SEO, and cloud DevOps.",
 };
 
 export default function ServicesPage() {

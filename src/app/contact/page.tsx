@@ -3,9 +3,9 @@ import PageBanner from "@/components/PageBanner";
 import Contact from "@/components/Contact/Contact";
 
 export const metadata: Metadata = {
-  title: "Contact Aviora — Start a Project",
+  title: "Contact Varahi Advertising — Start a Project",
   description:
-    "Get in touch with Aviora. Tell us about your project and we'll get back to you within 1 business day.",
+    "Get in touch with Varahi Advertising. Tell us about your project and we'll get back to you within 1 business day.",
 };
 
 export default function ContactPage() {

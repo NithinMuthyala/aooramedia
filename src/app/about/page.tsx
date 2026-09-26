@@ -3,9 +3,9 @@ import PageBanner from "@/components/PageBanner";
 import AboutContent from "@/components/About/AboutContent";
 
 export const metadata: Metadata = {
-  title: "About Aviora — Our Story, Values & Team",
+  title: "About Varahi Advertising — Our Story, Values & Team",
   description:
-    "Learn about Aviora — a digital agency focused on building modern web experiences. Discover our values, team, and 5-year journey.",
+    "Learn about Varahi Advertising — a digital agency focused on building modern web experiences. Discover our values, team, and 5-year journey.",
 };
 
 export default function AboutPage() {

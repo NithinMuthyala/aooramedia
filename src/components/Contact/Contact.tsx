@@ -16,28 +16,40 @@ export default function Contact() {
     const ctx = gsap.context(() => {
 
       /* Heading */
-      gsap.from(".contact-heading", {
-        y: 60, opacity: 0, duration: 1, ease: "power3.out",
-        scrollTrigger: { trigger: sectionRef.current, start: "top 75%", once: true },
-      });
+      gsap.fromTo(".contact-heading",
+        { y: 60, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 1, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: sectionRef.current, start: "top 75%", once: true },
+        }
+      );
 
       /* Left panel */
-      gsap.from(".contact-info", {
-        x: -50, opacity: 0, duration: 1, ease: "power3.out",
-        scrollTrigger: { trigger: sectionRef.current, start: "top 70%", once: true },
-      });
+      gsap.fromTo(".contact-info",
+        { x: -50, opacity: 0 },
+        {
+          x: 0, opacity: 1, duration: 1, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: sectionRef.current, start: "top 70%", once: true },
+        }
+      );
 
       /* Right form */
-      gsap.from(".contact-form", {
-        x: 50, opacity: 0, duration: 1, delay: 0.15, ease: "power3.out",
-        scrollTrigger: { trigger: sectionRef.current, start: "top 70%", once: true },
-      });
+      gsap.fromTo(".contact-form",
+        { x: 50, opacity: 0 },
+        {
+          x: 0, opacity: 1, duration: 1, delay: 0.15, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: sectionRef.current, start: "top 70%", once: true },
+        }
+      );
 
       /* Form fields stagger */
-      gsap.from(".contact-field", {
-        y: 20, opacity: 0, duration: 0.6, stagger: 0.08, ease: "power3.out",
-        scrollTrigger: { trigger: sectionRef.current, start: "top 65%", once: true },
-      });
+      gsap.fromTo(".contact-field",
+        { y: 20, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: sectionRef.current, start: "top 65%", once: true },
+        }
+      );
 
       /* Floating glow drift */
       gsap.to(".contact-glow", {
@@ -187,10 +199,10 @@ export default function Contact() {
                 <div>
                   <p className="text-xs uppercase tracking-[0.18em] text-[#1D1D1F]/40">Email</p>
                   <a
-                    href="mailto:hello@aviora.co"
+                    href="mailto:hello@varahiadvertising.com"
                     className="mt-1 inline-block text-sm font-semibold text-[#1D1D1F] transition-colors hover:text-[#F5B800]"
                   >
-                    hello@aviora.co
+                    hello@varahiadvertising.com
                   </a>
                 </div>
                 <div>

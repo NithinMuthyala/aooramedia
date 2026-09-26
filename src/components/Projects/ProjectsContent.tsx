@@ -75,11 +75,16 @@ export default function ProjectsContent() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      gsap.fromTo(".filter-pill",
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.06, ease: "power3.out" }
+      );
+
       gsap.fromTo(".project-card",
         { y: 70, opacity: 0, scale: 0.94 },
         {
           y: 0, opacity: 1, scale: 1,
-          duration: 0.9, stagger: 0.12, ease: "power3.out",
+          duration: 0.9, stagger: 0.12, ease: "power3.out", immediateRender: false,
           scrollTrigger: { trigger: ".projects-grid", start: "top 80%", once: true },
         }
       );
@@ -96,7 +101,7 @@ export default function ProjectsContent() {
           {["All", "Web App", "E-Commerce", "AI & ML", "Mobile", "Healthcare"].map((f, i) => (
             <button
               key={f}
-              className={`rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] transition-all duration-200 ${
+              className={`filter-pill rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] transition-all duration-200 ${
                 i === 0
                   ? "border-[#A90016]/50 bg-[#A90016]/10 text-[#A90016]"
                   : "border-[#A90016]/50 bg-white/50 text-[#1D1D1F]/55 hover:border-[#A90016]/40 hover:text-[#F5B800]"

@@ -32,17 +32,17 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | Aviora Services`,
+    title: `${service.title} | Varahi Advertising Services`,
     description: service.seo?.description || service.shortDescription || service.description,
     keywords: service.seo?.keywords,
     openGraph: {
-      title: `${service.title} | Aviora Services`,
+      title: `${service.title} | Varahi Advertising Services`,
       description: service.seo?.description || service.shortDescription || service.description,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${service.title} | Aviora Services`,
+      title: `${service.title} | Varahi Advertising Services`,
       description: service.seo?.description || service.shortDescription || service.description,
     },
     robots: {

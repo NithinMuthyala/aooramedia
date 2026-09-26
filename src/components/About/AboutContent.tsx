@@ -41,17 +41,33 @@ export default function AboutContent() {
           section,
           { y: 60, opacity: 0 },
           {
-            y: 0, opacity: 1, duration: 0.9, ease: "power3.out",
+            y: 0, opacity: 1, duration: 0.9, ease: "power3.out", immediateRender: false,
             scrollTrigger: { trigger: section, start: "top 82%", once: true },
           }
         );
       });
 
+      gsap.fromTo(".value-card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.7, stagger: 0.1, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: ".values-grid", start: "top 80%", once: true },
+        }
+      );
+
       gsap.fromTo(".timeline-item",
         { x: -40, opacity: 0 },
         {
-          x: 0, opacity: 1, duration: 0.7, stagger: 0.14, ease: "power3.out",
+          x: 0, opacity: 1, duration: 0.7, stagger: 0.14, ease: "power3.out", immediateRender: false,
           scrollTrigger: { trigger: ".timeline-wrap", start: "top 78%", once: true },
+        }
+      );
+
+      gsap.fromTo(".team-card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.7, stagger: 0.12, ease: "power3.out", immediateRender: false,
+          scrollTrigger: { trigger: ".team-grid", start: "top 80%", once: true },
         }
       );
     }, pageRef);
@@ -77,13 +93,13 @@ export default function AboutContent() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="values-grid mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {values.map((v) => (
               <motion.div
                 key={v.title}
                 whileHover={{ y: -6, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 350, damping: 22 }}
-                className="group relative overflow-hidden rounded-3xl border border-[#A90016]/40 bg-white/65 p-7 shadow-sm backdrop-blur-xl"
+                className="value-card group relative overflow-hidden rounded-3xl border border-[#A90016]/40 bg-white/65 p-7 shadow-sm backdrop-blur-xl"
               >
                 <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-[#A90016]/8 blur-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <span className="text-2xl" style={{ color: "#A90016" }}>{v.icon}</span>
@@ -150,13 +166,13 @@ export default function AboutContent() {
             </h2>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="team-grid mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((member) => (
               <motion.div
                 key={member.name}
                 whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="group text-center"
+                className="team-card group text-center"
               >
                 {/* Avatar */}
                 <div className="relative mx-auto h-24 w-24">

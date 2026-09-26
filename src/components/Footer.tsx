@@ -135,8 +135,8 @@ export default function Footer() {
             className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
             aria-hidden="true"
           >
-            <span className="text-[clamp(5rem,18vw,20rem)] font-black uppercase tracking-[-0.04em] text-white/[0.03] leading-none">
-              AVIORA
+            <span className="text-[clamp(4rem,14vw,16rem)] font-black uppercase tracking-[-0.04em] text-white/[0.03] leading-none text-center">
+              VARAHI ADVERTISING
             </span>
           </div>
 
@@ -187,10 +187,10 @@ export default function Footer() {
           <div className="footer-column">
             <Link href="/" className="inline-flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F5B800] text-sm font-bold text-[#72000F] shadow-lg shadow-[#F5B800]/20">
-                A
+                V
               </span>
               <span className="text-xl font-bold tracking-tight text-white">
-                AVI<span className="text-[#F5B800]">ORA</span>
+                VARAHI <span className="text-[#F5B800]">ADVERTISING</span>
               </span>
             </Link>
 
@@ -274,10 +274,10 @@ export default function Footer() {
               <div>
                 <p className="text-xs text-white/50">Email</p>
                 <a
-                  href="mailto:hello@aviora.co"
-                  className="footer-link mt-1 block text-sm text-white transition-colors hover:text-[#F5B800]"
+                  href="mailto:hello@varahiadvertising.com"
+                  className="footer-link mt-1 block text-sm text-[#F5B800] font-semibold transition-colors hover:text-white"
                 >
-                  hello@aviora.co
+                  hello@varahiadvertising.com
                 </a>
               </div>
               <div>
@@ -317,13 +317,13 @@ export default function Footer() {
 
         <div className="flex flex-col gap-5 py-7 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-white/70">
-            © {currentYear} Aviora. All rights reserved. Built with ❤️ in India.
+            © {currentYear} Varahi Advertising. All rights reserved. Built with ❤️ in India.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-xs text-white/70 transition-colors hover:text-white">
+            <Link href="/privacy_policy" className="text-xs text-white/70 transition-colors hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-xs text-white/70 transition-colors hover:text-white">
+            <Link href="/terms_and_conditions" className="text-xs text-white/70 transition-colors hover:text-white">
               Terms &amp; Conditions
             </Link>
           </div>
