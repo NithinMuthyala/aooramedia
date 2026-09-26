@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
@@ -135,21 +136,39 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-[#1D1D1F]"
+            className="flex items-center gap-1.5 min-w-0"
           >
-            {/* Logo mark */}
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#A90016] to-[#72000F] text-sm font-bold text-[#F5B800] shadow-md shadow-[#A90016]/30">
-              V
-            </span>
-            <span>
+            <Image
+              src="/assets/varahi_logo.PNG"
+              alt="Varahi Advertising logo"
+              width={68}
+              height={68}
+              className="h-16 w-16 flex-shrink-0 rounded-xl object-contain"
+              priority
+            />
+            <span className="flex flex-col leading-none min-w-0">
               <span
+                className="text-base font-black tracking-widest"
                 style={{
                   background: "linear-gradient(90deg, #A90016 0%, #B71C2B 40%, #F5B800 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}
-              >VARAHI ADVERTISING</span>
+              >
+                VARAHI
+              </span>
+              <span
+                className="text-[11px] font-semibold tracking-[0.2em]"
+                style={{
+                  background: "linear-gradient(90deg, #A90016 0%, #B71C2B 40%, #F5B800 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                ADVERTISING
+              </span>
             </span>
           </Link>
 

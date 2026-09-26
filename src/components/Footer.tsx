@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import services from "@/data/service.json";
@@ -185,12 +186,21 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="footer-column">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F5B800] text-sm font-bold text-[#72000F] shadow-lg shadow-[#F5B800]/20">
-                V
-              </span>
-              <span className="text-xl font-bold tracking-tight text-white">
-                VARAHI <span className="text-[#F5B800]">ADVERTISING</span>
+            <Link href="/" className="inline-flex items-center gap-1.5">
+              <Image
+                src="/assets/varahi_logo.PNG"
+                alt="Varahi Advertising logo"
+                width={72}
+                height={72}
+                className="h-[72px] w-[72px] flex-shrink-0 rounded-xl object-contain"
+              />
+              <span className="flex flex-col leading-none">
+                <span className="text-xl font-black tracking-widest text-white">
+                  VARAHI
+                </span>
+                <span className="text-[11px] font-semibold tracking-[0.22em] text-[#F5B800] mt-0.5">
+                  ADVERTISING
+                </span>
               </span>
             </Link>
 

@@ -78,16 +78,74 @@ export default function Contact() {
     });
   };
 
-  /* Submit animation */
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  /* Submit — EmailJS + toast */
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const btn = e.currentTarget.querySelector<HTMLButtonElement>("[type='submit']");
-    if (!btn) return;
+    const form = e.currentTarget;
+    const btn  = form.querySelector<HTMLButtonElement>("[type='submit']");
 
-    gsap.timeline()
-      .to(btn, { scale: 0.95, duration: 0.1 })
-      .to(btn, { scale: 1.04, duration: 0.2, ease: "back.out(2)" })
-      .to(btn, { scale: 1, duration: 0.3, ease: "power2.out" });
+    /* Button press animation */
+    if (btn) {
+      gsap.timeline()
+        .to(btn, { scale: 0.95, duration: 0.1 })
+        .to(btn, { scale: 1.04, duration: 0.2, ease: "back.out(2)" })
+        .to(btn, { scale: 1,    duration: 0.3, ease: "power2.out" });
+    }
+
+    /* Disable button while sending */
+    if (btn) { btn.disabled = true; btn.textContent = "Sending\u2026"; }
+
+    const toastStyle = {
+      background: "#1D1D1F",
+      color: "#FDF8EF",
+      borderRadius: "12px",
+      padding: "14px 18px",
+      fontSize: "14px",
+      fontWeight: "500",
+      boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
+    };
+
+    try {
+      const [emailjs, { toast }] = await Promise.all([
+        import("@emailjs/browser"),
+        import("react-hot-toast"),
+      ]);
+
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        form,
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! },
+      );
+
+      toast.success("Message sent! We\u2019ll get back to you soon. \uD83C\uDF89", {
+        style: toastStyle,
+        iconTheme: { primary: "#F5B800", secondary: "#1D1D1F" },
+        duration: 5000,
+      });
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_AUTO_REPLY_TEMPLATE_ID!,
+        form,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        }
+);
+
+      form.reset();
+    } catch {
+      const { toast } = await import("react-hot-toast");
+      toast.error("Something went wrong. Please try again or email us directly.", {
+        style: toastStyle,
+        iconTheme: { primary: "#A90016", secondary: "#FDF8EF" },
+        duration: 6000,
+      });
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = 'Send Enquiry <span class="transition-transform duration-300 group-hover:translate-x-1">\u2192</span>';
+      }
+    }
   };
 
   const inputClass = `w-full rounded-xl border border-[#A90016]/50 bg-[#FDF8EF]/70 px-4 py-3.5 text-sm text-[#1D1D1F] outline-none transition-all placeholder:text-[#1D1D1F]/30 focus:border-[#A90016] focus:bg-white`;
