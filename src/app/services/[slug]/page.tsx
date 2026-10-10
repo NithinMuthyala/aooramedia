@@ -45,6 +45,9 @@ export async function generateMetadata({
       title: `${service.title} | Varahi Advertising Services`,
       description: service.seo?.description || service.shortDescription || service.description,
     },
+    alternates: {
+      canonical: `https://www.varahiadvertising.com/services/${service.slug}`,
+    },
     robots: {
       index: true,
       follow: true,
@@ -65,5 +68,26 @@ export default async function ServicePage({
     notFound();
   }
 
-  return <ServiceDetail service={service} />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.title,
+    "description": service.shortDescription || service.description,
+    "provider": {
+      "@type": "Organization",
+      "name": "Varahi Advertising",
+      "url": "https://www.varahiadvertising.com"
+    },
+    "url": `https://www.varahiadvertising.com/services/${service.slug}`
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ServiceDetail service={service} />
+    </>
+  );
 }

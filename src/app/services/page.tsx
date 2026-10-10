@@ -3,9 +3,17 @@ import PageBanner from "@/components/PageBanner";
 import Services from "@/components/Services/Services";
 
 export const metadata: Metadata = {
-  title: "Services — Varahi Advertising Agency",
-  description:
-    "Explore Varahi Advertising's full range of digital services: web development, UI/UX design, mobile apps, AI automation, SEO, and cloud DevOps.",
+  title: "Services | Varahi Advertising — Web, Mobile, AI & Marketing",
+  description: "Explore our full range of technology services including custom web development, mobile apps, AI automation, cybersecurity, digital marketing, and UI/UX design.",
+  alternates: {
+    canonical: "https://www.varahiadvertising.com/services",
+  },
+  openGraph: {
+    title: "Services | Varahi Advertising — Web, Mobile, AI & Marketing",
+    description: "From strategy and design to development and marketing — we build digital solutions designed around your business goals.",
+    url: "https://www.varahiadvertising.com/services",
+    type: "website",
+  },
 };
 
 export default function ServicesPage() {

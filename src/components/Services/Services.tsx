@@ -228,14 +228,14 @@ export default function Services() {
                   {/* IMAGE PANEL */}
                   <div className="service-image">
                     <div
-                      style={{
-                        backgroundImage: `url(${service.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                      }}
                       className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-[#A90016]/15 bg-white/60 shadow-2xl shadow-[#A90016]/8 backdrop-blur-2xl"
                     >
+                      <img
+                        src={service.image}
+                        alt={`${service.title} services by Varahi Advertising`}
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
                       {/* Glow blobs — deep red + gold */}
                       <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#A90016]/15 blur-[100px] transition-transform duration-700 group-hover:scale-125" />
                       <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#F5B800]/12 blur-[100px] transition-transform duration-700 group-hover:scale-125" />

@@ -3,9 +3,17 @@ import PageBanner from "@/components/PageBanner";
 import AboutContent from "@/components/About/AboutContent";
 
 export const metadata: Metadata = {
-  title: "About Varahi Advertising — Our Story, Values & Team",
-  description:
-    "Learn about Varahi Advertising — a digital agency focused on building modern web experiences. Discover our values, team, and 5-year journey.",
+  title: "About Us | Varahi Advertising — Digital & Technology Agency",
+  description: "Learn about Varahi Advertising, a premier digital agency in India focusing on building modern web experiences, mobile apps, and scalable digital products.",
+  alternates: {
+    canonical: "https://www.varahiadvertising.com/about",
+  },
+  openGraph: {
+    title: "About Us | Varahi Advertising — Digital & Technology Agency",
+    description: "Discover the story, values, and expert team behind Varahi Advertising. We build products that move businesses forward.",
+    url: "https://www.varahiadvertising.com/about",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

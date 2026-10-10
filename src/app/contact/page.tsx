@@ -3,9 +3,17 @@ import PageBanner from "@/components/PageBanner";
 import Contact from "@/components/Contact/Contact";
 
 export const metadata: Metadata = {
-  title: "Contact Varahi Advertising — Start a Project",
-  description:
-    "Get in touch with Varahi Advertising. Tell us about your project and we'll get back to you within 1 business day.",
+  title: "Contact Us | Varahi Advertising — Start a Project",
+  description: "Get in touch with Varahi Advertising to discuss your next web development, mobile app, or digital marketing project. Let's build something remarkable.",
+  alternates: {
+    canonical: "https://www.varahiadvertising.com/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Varahi Advertising — Start a Project",
+    description: "Ready to accelerate your digital growth? Contact Varahi Advertising today.",
+    url: "https://www.varahiadvertising.com/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

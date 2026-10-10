@@ -3,9 +3,17 @@ import PageBanner from "@/components/PageBanner";
 import ProjectsContent from "@/components/Projects/ProjectsContent";
 
 export const metadata: Metadata = {
-  title: "Projects — Varahi Advertising Case Studies & Portfolio",
-  description:
-    "Explore Varahi Advertising's portfolio of digital products — from fintech dashboards and e-commerce to AI pipelines and healthcare platforms.",
+  title: "Our Work & Projects | Varahi Advertising Portfolio",
+  description: "Explore Varahi Advertising's portfolio of successful digital products. Discover our case studies in web development, mobile apps, e-commerce, and software solutions.",
+  alternates: {
+    canonical: "https://www.varahiadvertising.com/projects",
+  },
+  openGraph: {
+    title: "Our Work & Projects | Varahi Advertising Portfolio",
+    description: "Real products. Real results. View a selection of products we've designed and engineered for our clients.",
+    url: "https://www.varahiadvertising.com/projects",
+    type: "website",
+  },
 };
 
 export default function ProjectsPage() {
